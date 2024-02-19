@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="border-start border-grey border-5 ms-3 ps-2 my-4">
+    <p><%= params[:question]%></p>
+    <p class="fst-italic">- You</p>
+  </div>
+  <div class="bg-warning bg-opacity-25 bg-gradient  w-25 border-start border-grey border-5 ms-3 ps-2 my-4">
+    <p class="fw-bold"><%= @answers%></p>
+    <p class="fst-italic">- Your coach</p>
+  </div>
+  <div class="ms-3"><%= link_to "Ask a new question", ask_path %></div>
+</body>
+</html>
